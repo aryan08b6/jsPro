@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Functions
+    </title>
+  </head>
+
+  <body>
+    <script>
+      function myFunc(){
+        console.log("Hello Function Was Called")
+      }
+
+      function alsoMyFunc(p1, p2){
+        return `working with parameters ${p1*p2};`
+      }
+
+      function calTax(cost, tPer=0.1){
+        console.log(cost*tPer);
+      }
+
+      
+      myFunc();
+      console.log(alsoMyFunc(10, 20));
+      calTax(1500);
+
+    </script>
+  </body>
+  </html>

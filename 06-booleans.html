@@ -10,7 +10,39 @@
 
   <body>
     <script>
-      console.log(3 < 6)
+
+      console.log(typeof(3 < 6));
+      console.log(5 == '5.00');
+      console.log(5 === '5.00');
+    
+
+      if (true) 
+        console.log('The Statement is True');
+      
+      else
+        console.log('The Statement is False');
+      
+
+      let age = 20;
+      const legalAge = 21;
+      if (age >= legalAge){
+        console.log("The Person can drive");
+      } 
+      else if (age>=(legalAge-1)){
+        console.log("Almost Old Enough to Drive")
+      } 
+      else{
+        console.log("The person cannot drive");
+      }
+
+
+      const result = true ? 'expTrue' : 'expFalse';
+
+      const mssg = false && 'hello';
+      console.log(mssg);
+      
+      const currency = undefined || 'USD';
+      console.log(currency);
     </script>
   </body>
 
