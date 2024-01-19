@@ -1,0 +1,59 @@
+<html>
+
+  <head>
+
+  </head>
+
+  <body>
+
+    <script>
+      const arr1 = [1, 2 ,3];
+      const arr2 = arr1.slice();       //contains copy of ref
+      arr2.push(90);  
+      console.log(arr2)
+
+      const [first, second, third] = arr1;
+      console.log(first, second, third)
+
+      for (let i = 0; i<10; i++){
+        console.log(i);
+        if (i === 8){
+          break;
+        }
+      for (let i = 0; i<10; i++){
+        if (i === 3){
+          continue;
+        }
+        console.log(i);
+      }
+    }
+
+    let i = 1;
+
+    while (i<=10){
+      if (i%3 === 0){
+        i++;
+        continue;
+      }
+      console.log(i);
+      i++;
+    }
+
+    function doubleArr(L){
+      const doubledArr = [];
+      
+      for (let i=0; i<L.length; i++){
+        doubledArr.push(L[i]*2);
+      }
+
+      return doubledArr;
+    }
+
+    console.log(doubleArr([45, 62, 34]));
+
+
+    </script>
+    
+  </body>
+
+</html>

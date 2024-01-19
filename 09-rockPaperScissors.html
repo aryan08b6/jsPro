@@ -22,21 +22,21 @@
       Scissors
     </button>
 
-    <button onclick="
-      score.wins = 0;
-      score.losses = 0;
-      score.ties = 0;
-      updateScore();
-      localStorage.setItem('score', JSON.stringify(score));
-      const status = document.querySelector('.js-status');
-      status.innerHTML = '';
-    ">
-      Reset Score
-    </button>
-
     <p class="js-score"></p>
 
     <p class="js-status"></p>
+
+    <button onclick="
+    score.wins = 0;
+    score.losses = 0;
+    score.ties = 0;
+    updateScore();
+    localStorage.setItem('score', JSON.stringify(score));
+    const status = document.querySelector('.js-status');
+    status.innerHTML = '';
+  ">
+    Reset Score
+  </button>
 
     <script>
       let compChoice;
